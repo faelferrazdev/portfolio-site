@@ -1,334 +1,332 @@
 /* ==========================
-   RESET E CONFIGURAÇÕES GLOBAIS
+RESET E CONFIGURAÇÕES GLOBAIS
 ========================== */
 html {
-    box-sizing: border-box;
-
-    scroll-behavior: smooth;
-    height: 100%;
+box-sizing: border-box;
+scroll-behavior: smooth;
+height: 100%;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+font-family: 'Poppins', sans-serif;
+margin: 0;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+padding-top: 0;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
 
 /* ==========================
-   HEADER / MENU
+HEADER / MENU
 ========================== */
 header {
-   
-    background: rgba(17, 17, 17, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+background: rgba(17, 17, 17, 0.6);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
 
-    color: white;
-    padding: 15px 40px;
+color: white;
+padding: 15px 40px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
-    width: 100%;
-    box-sizing: border-box;
+width: 100%;
+box-sizing: border-box;
 
-    z-index: 1000;
+z-index: 1000;
+
 }
 
 header h1 {
-    margin: 0;
+margin: 0;
 }
 
 nav {
-    
-    display: flex;
-    gap: 15px;
-    align-items: center;
+display: flex;
+gap: 15px;
+align-items: center;
 }
 
-
-
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+color: white;
+text-decoration: none;
+font-weight: bold;
 }
 
 nav a:hover {
-    color: orange;
+color: orange;
 }
 
 header button {
-    padding: 8px 12px;
-    background: #007BFF;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 15px;
-    white-space: nowrap;
+padding: 8px 12px;
+background: #007BFF;
+border: none;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+margin-left: 15px;
+white-space: nowrap;
 }
 
 header button:hover {
-    background: #0056b3;
+background: #0056b3;
 }
 
 #home {
-    font-size: 20px;
-    margin-right: 10px;
-    text-decoration: none;
+font-size: 20px;
+margin-right: 10px;
+text-decoration: none;
 }
 
 /* ==========================
-   SEÇÕES
+SEÇÕES
 ========================== */
 main section {
-    padding: 25px;
-    max-width: 800px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    scroll-margin-top: 120px;
-    animation: fade 1s ease;
+padding: 25px;
+max-width: 800px;
+margin: 20px auto;
+background: white;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+scroll-margin-top: 120px;
+animation: fade 1s ease;
 }
 
 h2 {
-    color: #333;
-    position: relative;
-    margin-bottom: 20px;
+color: #333;
+position: relative;
+margin-bottom: 20px;
 }
 
 h2::after {
-    content:"";
-    width:50px;
-    height:3px;
-    background:#00bcd4;
-    position:absolute;
-    left:0;
-    bottom:-8px;
+content:"";
+width:50px;
+height:3px;
+background:#00bcd4;
+position:absolute;
+left:0;
+bottom:-8px;
 }
 
 /* ==========================
-   PORTFÓLIO / CARDS
+PORTFÓLIO / CARDS
 ========================== */
 .projetos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+display: flex;
+flex-direction: column;
+gap: 20px;
 }
 
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    width: 95%;
-    transition: 0.3s;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+width: 95%;
+transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .card h3 {
-    margin-top: 0;
+margin-top: 0;
 }
 
 .btn-projeto {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 14px;
-    color: white;
-    background: linear-gradient(45deg,#8e44ad,#3498db);
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 14px;
-    transition: 0.3s;
+display: inline-block;
+margin-top: 10px;
+padding: 8px 14px;
+color: white;
+background: linear-gradient(45deg,#8e44ad,#3498db);
+text-decoration: none;
+border-radius: 6px;
+font-size: 14px;
+transition: 0.3s;
 }
 
 .btn-projeto:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* ==========================
-   TECNOLOGIAS
+TECNOLOGIAS
 ========================== */
 .tecnologias {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+margin-top: 20px;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
 }
 
 .tecnologias img {
-    width: 40px;
-    transition: 0.3s;
+width: 40px;
+transition: 0.3s;
 }
 
 .tecnologias img:hover {
-    transform: scale(1.2);
+transform: scale(1.2);
 }
 
 /* ==========================
-   FORMULÁRIO
+FORMULÁRIO
 ========================== */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
 }
 
 button[type="submit"] {
-    padding: 10px;
-    border: none;
-    background: #007BFF;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+padding: 10px;
+border: none;
+background: #007BFF;
+color: white;
+font-size: 16px;
+cursor: pointer;
+border-radius: 5px;
 }
 
 button[type="submit"]:hover {
-    background: #0056b3;
+background: #0056b3;
 }
 
 /* ==========================
-   RODAPÉ
+RODAPÉ
 ========================== */
 footer {
-    background: #111;
-    color: white;
-    width: 100%;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: auto;
+background: #111;
+color: white;
+width: 100%;
+padding: 40px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top: auto;
 }
 
 /* ==========================
-   ANIMAÇÕES
+ANIMAÇÕES
 ========================== */
 @keyframes fade {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
 }
 
 /* ==========================
-   MODO ESCURO
+MODO ESCURO (CORRIGIDO)
 ========================== */
-.dark body {
-    background: #121212;
-    color: white;
+body.dark {
+background: #121212;
+color: white;
 }
 
-.dark section {
-    background: #2a2a2a;
-    color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+body.dark section {
+background: #2a2a2a;
+color: white;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.dark h2 {
-    color: #fff;
+body.dark h2 {
+color: #fff;
 }
 
-.dark .card {
-    background: #1e1e1e;
-    color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+body.dark .card {
+background: #1e1e1e;
+color: white;
+box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
-.dark nav a:hover {
-    color: #4da6ff;
+body.dark nav a:hover {
+color: #4da6ff;
 }
 
-.dark input, 
-.dark textarea {
-    background: #2a2a2a;
-    color: white;
-    border: 1px solid #555;
+body.dark input,
+body.dark textarea {
+background: #2a2a2a;
+color: white;
+border: 1px solid #555;
 }
 
 /* ==========================
-   RESPONSIVIDADE
+RESPONSIVIDADE
 ========================== */
 @media (max-width: 768px) {
 
-    header {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 20px 10px;
-    }
+header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10px;
+}
 
-    header h1 {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-    }
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
 
-    nav a {
-        font-size: 18px;
-    }
+nav a {
+    font-size: 18px;
+}
 
-    header button {
-        margin-top: 15px;
-        padding: 10px 16px;
-        font-size: 16px;
-    }
+header button {
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 16px;
+}
 
-    main {
-        margin-top: 20px;
-    }
+main {
+    margin-top: 20px;
+}
 
-    main section {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-    }
+main section {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
 
-    .projetos {
-        align-items: center;
-    }
+.projetos {
+    align-items: center;
+}
 
-    .card {
-        width: 95%;
-    }
+.card {
+    width: 95%;
+}
 
-    form,
-    input,
-    textarea {
-        width: 100%;
-    }
+form,
+input,
+textarea {
+    width: 100%;
+}
+
+
 }
